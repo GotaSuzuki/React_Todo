@@ -8,7 +8,7 @@ export const IncompleteTodos = (props) => {
         <p className='title'>未完了のTODO</p>
         {todos.map((todo, index) => {
           return (
-            <li key={todo}>
+            <li key={index}>
               <div className='list-row'>
                 <p>{todo}</p>
                 <button onClick={() => onClickComplete(index)}>完了</button>
